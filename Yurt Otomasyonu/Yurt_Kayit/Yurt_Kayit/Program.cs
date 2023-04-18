@@ -16,7 +16,7 @@ namespace Yurt_Kayit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmOgrKayit());
+            Application.Run(new FrmBolumler());
         }
     }
 }
