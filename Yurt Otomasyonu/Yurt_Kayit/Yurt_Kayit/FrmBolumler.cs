@@ -49,14 +49,22 @@ namespace Yurt_Kayit
 
         private void PcbSil_Click(object sender, EventArgs e)
         {
-            
+
+
+            try
+            {
                 baglanti.Open();
                 SqlCommand komut2 = new SqlCommand("delete from Bolumler where Bolumid=@b1", baglanti);
                 komut2.Parameters.AddWithValue("@b1", TxtBolumİD);
                 komut2.ExecuteNonQuery();
                 baglanti.Close();
                 MessageBox.Show("Silme İşlemi Yapılmıştır");
+            }
+            catch (Exception)
+            {
 
+                MessageBox.Show("Silme İşlemi Yapılmadı");
+            }
         }
         int secilen;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
