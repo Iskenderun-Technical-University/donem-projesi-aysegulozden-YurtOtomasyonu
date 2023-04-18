@@ -71,6 +71,7 @@
             this.PcbGüncelle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PcbGüncelle.TabIndex = 1;
             this.PcbGüncelle.TabStop = false;
+            this.PcbGüncelle.Click += new System.EventHandler(this.PcbGüncelle_Click);
             // 
             // PcbSil
             // 
