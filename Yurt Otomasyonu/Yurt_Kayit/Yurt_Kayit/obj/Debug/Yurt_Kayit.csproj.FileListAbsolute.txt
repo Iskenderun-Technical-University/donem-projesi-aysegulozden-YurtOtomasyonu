@@ -10,3 +10,4 @@ C:\Users\Ayşegül\Desktop\Yurt Otomasyonu\Yurt_Kayit\Yurt_Kayit\obj\Debug\Yurt_
 C:\Users\Ayşegül\Desktop\Yurt Otomasyonu\Yurt_Kayit\Yurt_Kayit\obj\Debug\Yurt_Kayit.exe
 C:\Users\Ayşegül\Desktop\Yurt Otomasyonu\Yurt_Kayit\Yurt_Kayit\obj\Debug\Yurt_Kayit.pdb
 C:\Users\Ayşegül\Desktop\Yurt Otomasyonu\Yurt_Kayit\Yurt_Kayit\obj\Debug\Yurt_Kayit.FrmBolumler.resources
+C:\Users\Ayşegül\Desktop\Yurt Otomasyonu\Yurt_Kayit\Yurt_Kayit\obj\Debug\Yurt_Kayit.FrmAnaMenuForm.resources

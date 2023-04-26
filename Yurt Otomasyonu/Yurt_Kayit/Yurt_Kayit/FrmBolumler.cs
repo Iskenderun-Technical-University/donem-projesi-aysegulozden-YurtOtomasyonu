@@ -14,7 +14,7 @@ namespace Yurt_Kayit
     public partial class FrmBolumler : Form
     {
         public FrmBolumler()
-        {
+        { 
             InitializeComponent();
         }
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-SJJ7N21\\SQLEXPRESS;Initial Catalog=YürtKayit;Integrated Security=True");
