@@ -4,4 +4,4 @@
 -Oda doluluklarını göstericek 
 -Yurdun genel giderlerini gösterebilecek
 
-
+Bu projede  SQL veri tabanı kullanılcak
