@@ -17,26 +17,26 @@ namespace Yurt_Kayit
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-SJJ7N21\\SQLEXPRESS;Initial Catalog=YürtKayit;Integrated Security=True");
+        SqlBaglantim bgl = new SqlBaglantim();
 
         private void FrmOgrKayit_Load(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler",baglanti);
+            
+            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler",bgl.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             while(oku.Read())
             {
                 CmbBolum.Items.Add(oku[0].ToString());
             }
-            baglanti.Close();
-            baglanti.Open();
-            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif", baglanti);
+            bgl.baglanti().Close();
+            
+            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif", bgl.baglanti());
             SqlDataReader oku2 = komut2.ExecuteReader();
             while(oku2.Read())
             {
                 CmbOdaNo.Items.Add(oku2[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
 
 
         }
@@ -45,8 +45,8 @@ namespace Yurt_Kayit
         {
             
 
-                baglanti.Open();
-                SqlCommand komutkaydet = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTc,OgrTelefon,OgrDogum,OgrBölüm,OgrMail,OgrOdaNo,OgrVeliAd,OgrVeliSoyad,OgrVeliTelefon,OgrVeliAdres) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8,@v9,@v10,@v11,@v12)", baglanti);
+               
+                SqlCommand komutkaydet = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTc,OgrTelefon,OgrDogum,OgrBölüm,OgrMail,OgrOdaNo,OgrVeliAd,OgrVeliSoyad,OgrVeliTelefon,OgrVeliAdres) values(@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8,@v9,@v10,@v11,@v12)",bgl.baglanti());
 
                 komutkaydet.Parameters.AddWithValue("@o1", TxtOgrAd.Text);
                 komutkaydet.Parameters.AddWithValue("@o2", TxtOgrSoyad.Text);
@@ -60,10 +60,9 @@ namespace Yurt_Kayit
                 komutkaydet.Parameters.AddWithValue("@v10", TxtVeliSoyad.Text);
                 komutkaydet.Parameters.AddWithValue("@v11", MskVeliTelefon.Text);
                 komutkaydet.Parameters.AddWithValue("@v12", richTextBox1.Text);
-
-                komutkaydet.ExecuteNonQuery();
-                baglanti.Close();
-               
+            bgl.baglanti().Close();
+            komutkaydet.ExecuteNonQuery();
+            
 
         }
     }
