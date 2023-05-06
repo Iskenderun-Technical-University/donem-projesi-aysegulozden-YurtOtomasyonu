@@ -52,6 +52,12 @@
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frmodemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmodemler.Designer.cs">
+      <DependentUpon>Frmodemler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmOgrKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,8 +87,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Yurt_KayitDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Yurt_KayitDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmodemler.resx">
+      <DependentUpon>Frmodemler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrKayit.resx">
       <DependentUpon>FrmOgrKayit.cs</DependentUpon>
@@ -148,6 +162,17 @@
     </None>
     <None Include="Yurt_KayitDataSet3.xss">
       <DependentUpon>Yurt_KayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet4.xsc">
+      <DependentUpon>Yurt_KayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet4.xss">
+      <DependentUpon>Yurt_KayitDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
