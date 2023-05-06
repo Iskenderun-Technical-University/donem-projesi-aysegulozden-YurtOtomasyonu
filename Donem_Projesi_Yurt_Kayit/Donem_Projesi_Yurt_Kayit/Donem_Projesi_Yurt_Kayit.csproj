@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaMenu.Designer.cs">
+      <DependentUpon>FrmAnaMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBolumler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="FrmOgrKayit.Designer.cs">
       <DependentUpon>FrmOgrKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrListe.Designer.cs">
+      <DependentUpon>FrmOgrListe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +104,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Yurt_KayitDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Yurt_KayitDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Yurt_KayitDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Yurt_KayitDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Yurt_KayitDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Yurt_KayitDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAnaMenu.resx">
+      <DependentUpon>FrmAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </EmbeddedResource>
@@ -100,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrKayit.resx">
       <DependentUpon>FrmOgrKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrListe.resx">
+      <DependentUpon>FrmOgrListe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +216,61 @@
     </None>
     <None Include="Yurt_KayitDataSet4.xss">
       <DependentUpon>Yurt_KayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet5.xsc">
+      <DependentUpon>Yurt_KayitDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet5.xss">
+      <DependentUpon>Yurt_KayitDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet6.xsc">
+      <DependentUpon>Yurt_KayitDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet6.xss">
+      <DependentUpon>Yurt_KayitDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet7.xsc">
+      <DependentUpon>Yurt_KayitDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet7.xss">
+      <DependentUpon>Yurt_KayitDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet8.xsc">
+      <DependentUpon>Yurt_KayitDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet8.xss">
+      <DependentUpon>Yurt_KayitDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet9.xsc">
+      <DependentUpon>Yurt_KayitDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet9.xss">
+      <DependentUpon>Yurt_KayitDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
