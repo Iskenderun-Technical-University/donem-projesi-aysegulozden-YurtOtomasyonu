@@ -42,5 +42,56 @@ namespace Donem_Projesi_Yurt_Kayit
 
 
         }
+
+        private void PcbSil_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("delete from Bolumler where BolumID=@b1", baglanti);
+            komut2.Parameters.AddWithValue("@b1", TxtBolumID.Text);
+            komut2.ExecuteNonQuery();
+            baglanti.Close();
+            MessageBox.Show("Silme işlemi gerçekleşti");
+            this.bolumlerTableAdapter.Fill(this.yurt_KayitDataSet.Bolumler);
+        }
+        int secilen;
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string ID, bolumad;
+
+            secilen = dataGridView1.SelectedCells[0].RowIndex;
+            ID = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
+            bolumad = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
+
+            TxtBolumID.Text = ID;
+            TxtBolumAd.Text = bolumad;
+
+
+
+
+        }
+
+        private void PcbGuncelle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                baglanti.Open();
+                SqlCommand komut3 = new SqlCommand("update Bolumler Set BolumAd=@b1 where BolumID=@b2", baglanti);
+                komut3.Parameters.AddWithValue("@b1", TxtBolumAd.Text);
+                komut3.Parameters.AddWithValue("@b2", TxtBolumID.Text);
+                komut3.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Güncelleme gerçekleşti");
+                this.bolumlerTableAdapter.Fill(this.yurt_KayitDataSet.Bolumler);
+            }
+            catch 
+            {
+                MessageBox.Show("Güncelleme gerçekleşmedi");
+
+            }
+
+
+
+        }
     }
 }

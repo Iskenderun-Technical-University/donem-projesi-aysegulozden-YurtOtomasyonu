@@ -38,17 +38,17 @@
             this.TxtBolumID = new System.Windows.Forms.TextBox();
             this.TxtBolumAd = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurt_KayitDataSet = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet();
-            this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bolumlerTableAdapter = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSetTableAdapters.BolumlerTableAdapter();
             this.bolumIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bolumAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bolumlerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurt_KayitDataSet = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet();
+            this.bolumlerTableAdapter = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSetTableAdapters.BolumlerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.PcbEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbSil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbGuncelle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // PcbEkle
@@ -71,6 +71,7 @@
             this.PcbSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PcbSil.TabIndex = 1;
             this.PcbSil.TabStop = false;
+            this.PcbSil.Click += new System.EventHandler(this.PcbSil_Click);
             // 
             // PcbGuncelle
             // 
@@ -81,6 +82,7 @@
             this.PcbGuncelle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PcbGuncelle.TabIndex = 2;
             this.PcbGuncelle.TabStop = false;
+            this.PcbGuncelle.Click += new System.EventHandler(this.PcbGuncelle_Click);
             // 
             // label1
             // 
@@ -126,20 +128,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(408, 388);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // yurt_KayitDataSet
-            // 
-            this.yurt_KayitDataSet.DataSetName = "Yurt_KayitDataSet";
-            this.yurt_KayitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bolumlerBindingSource
-            // 
-            this.bolumlerBindingSource.DataMember = "Bolumler";
-            this.bolumlerBindingSource.DataSource = this.yurt_KayitDataSet;
-            // 
-            // bolumlerTableAdapter
-            // 
-            this.bolumlerTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // bolumIDDataGridViewTextBoxColumn
             // 
@@ -154,6 +143,20 @@
             this.bolumAdDataGridViewTextBoxColumn.DataPropertyName = "BolumAd";
             this.bolumAdDataGridViewTextBoxColumn.HeaderText = "BolumAd";
             this.bolumAdDataGridViewTextBoxColumn.Name = "bolumAdDataGridViewTextBoxColumn";
+            // 
+            // bolumlerBindingSource
+            // 
+            this.bolumlerBindingSource.DataMember = "Bolumler";
+            this.bolumlerBindingSource.DataSource = this.yurt_KayitDataSet;
+            // 
+            // yurt_KayitDataSet
+            // 
+            this.yurt_KayitDataSet.DataSetName = "Yurt_KayitDataSet";
+            this.yurt_KayitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bolumlerTableAdapter
+            // 
+            this.bolumlerTableAdapter.ClearBeforeFill = true;
             // 
             // FrmBolumler
             // 
@@ -171,8 +174,6 @@
             this.Controls.Add(this.PcbEkle);
             this.Font = new System.Drawing.Font("Lucida Fax", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "FrmBolumler";
             this.Text = "Bölümler";
             this.Load += new System.EventHandler(this.FrmBolumler_Load);
@@ -180,8 +181,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.PcbSil)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PcbGuncelle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
