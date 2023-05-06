@@ -63,6 +63,23 @@ namespace Donem_Projesi_Yurt_Kayit
             komutkaydet.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Kayıt işlemi aşarılı olmuştur ");
+
+            SqlCommand komut = new SqlCommand("select OgrID from Ogrenci", bgl.baglanti());
+            SqlDataReader oku = komut.ExecuteReader();
+            while(oku.Read())
+            {
+                label13.Text = oku[0].ToString();
+            }
+            bgl.baglanti().Close();
+
+
+            SqlCommand komutkaydet2 = new SqlCommand("insert into Borclar  (OgrID,OgrAd,OgrSoyad)values(@b1,@b2,@b3)", bgl.baglanti());
+            komutkaydet2.Parameters.AddWithValue("@b1", label13.Text);
+            komutkaydet2.Parameters.AddWithValue("@b2", TxtOgAd.Text);
+            komutkaydet2.Parameters.AddWithValue("@b3", txtOgrSoyad.Text);
+
+            komutkaydet2.ExecuteNonQuery();
+            bgl.baglanti().Close();
         }
     }
 }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CmbOdalar = new System.Windows.Forms.ComboBox();
+            this.CmbBolum = new System.Windows.Forms.ComboBox();
             this.MskDogumTarihi = new System.Windows.Forms.MaskedTextBox();
             this.MskOgrTelefon = new System.Windows.Forms.MaskedTextBox();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
@@ -53,8 +55,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.BtnKaydet = new System.Windows.Forms.Button();
-            this.CmbBolum = new System.Windows.Forms.ComboBox();
-            this.CmbOdalar = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +85,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Öğrenci Bilgileri";
+            // 
+            // CmbOdalar
+            // 
+            this.CmbOdalar.FormattingEnabled = true;
+            this.CmbOdalar.Location = new System.Drawing.Point(188, 268);
+            this.CmbOdalar.Name = "CmbOdalar";
+            this.CmbOdalar.Size = new System.Drawing.Size(213, 25);
+            this.CmbOdalar.TabIndex = 43;
+            // 
+            // CmbBolum
+            // 
+            this.CmbBolum.FormattingEnabled = true;
+            this.CmbBolum.Location = new System.Drawing.Point(189, 181);
+            this.CmbBolum.Name = "CmbBolum";
+            this.CmbBolum.Size = new System.Drawing.Size(213, 25);
+            this.CmbBolum.TabIndex = 42;
             // 
             // MskDogumTarihi
             // 
@@ -207,6 +224,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.richTextBox1);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.MskVeliTelefon);
@@ -299,21 +317,15 @@
             this.BtnKaydet.UseVisualStyleBackColor = false;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // CmbBolum
+            // label13
             // 
-            this.CmbBolum.FormattingEnabled = true;
-            this.CmbBolum.Location = new System.Drawing.Point(189, 181);
-            this.CmbBolum.Name = "CmbBolum";
-            this.CmbBolum.Size = new System.Drawing.Size(213, 25);
-            this.CmbBolum.TabIndex = 42;
-            // 
-            // CmbOdalar
-            // 
-            this.CmbOdalar.FormattingEnabled = true;
-            this.CmbOdalar.Location = new System.Drawing.Point(188, 268);
-            this.CmbOdalar.Name = "CmbOdalar";
-            this.CmbOdalar.Size = new System.Drawing.Size(213, 25);
-            this.CmbOdalar.TabIndex = 43;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(29, 101);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(62, 17);
+            this.label13.TabIndex = 44;
+            this.label13.Text = "label13";
+            this.label13.Visible = false;
             // 
             // OgrKayit
             // 
@@ -367,6 +379,7 @@
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.ComboBox CmbBolum;
         private System.Windows.Forms.ComboBox CmbOdalar;
+        private System.Windows.Forms.Label label13;
     }
 }
 
