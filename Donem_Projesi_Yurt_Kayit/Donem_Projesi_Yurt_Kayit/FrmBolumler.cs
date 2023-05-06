@@ -18,7 +18,8 @@ namespace Donem_Projesi_Yurt_Kayit
             InitializeComponent();
         }
 
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-SJJ7N21\SQLEXPRESS;Initial Catalog=Yurt_Kayit;Integrated Security=True");
+        SqlBaglantim bgl = new SqlBaglantim();
+        
 
         private void FrmBolumler_Load(object sender, EventArgs e)
         {
@@ -31,11 +32,10 @@ namespace Donem_Projesi_Yurt_Kayit
         {
             
 
-                baglanti.Open();
-                SqlCommand komut1 = new SqlCommand("insert into Bolumler (BolumAd) values(@b1)", baglanti);
+                SqlCommand komut1 = new SqlCommand("insert into Bolumler (BolumAd) values(@b1)",bgl.baglanti());
                 komut1.Parameters.AddWithValue("@b1", TxtBolumAd.Text);
                 komut1.ExecuteNonQuery();
-                baglanti.Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("Bölüm eklendi");
             this.bolumlerTableAdapter.Fill(this.yurt_KayitDataSet.Bolumler);
 
@@ -45,11 +45,11 @@ namespace Donem_Projesi_Yurt_Kayit
 
         private void PcbSil_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand komut2 = new SqlCommand("delete from Bolumler where BolumID=@b1", baglanti);
+            
+            SqlCommand komut2 = new SqlCommand("delete from Bolumler where BolumID=@b1", bgl.baglanti());
             komut2.Parameters.AddWithValue("@b1", TxtBolumID.Text);
             komut2.ExecuteNonQuery();
-            baglanti.Close();
+            bgl.baglanti().Close();
             MessageBox.Show("Silme işlemi gerçekleşti");
             this.bolumlerTableAdapter.Fill(this.yurt_KayitDataSet.Bolumler);
         }
@@ -75,12 +75,12 @@ namespace Donem_Projesi_Yurt_Kayit
         {
             try
             {
-                baglanti.Open();
-                SqlCommand komut3 = new SqlCommand("update Bolumler Set BolumAd=@b1 where BolumID=@b2", baglanti);
+               
+                SqlCommand komut3 = new SqlCommand("update Bolumler Set BolumAd=@b1 where BolumID=@b2", bgl.baglanti());
                 komut3.Parameters.AddWithValue("@b1", TxtBolumAd.Text);
                 komut3.Parameters.AddWithValue("@b2", TxtBolumID.Text);
                 komut3.ExecuteNonQuery();
-                baglanti.Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("Güncelleme gerçekleşti");
                 this.bolumlerTableAdapter.Fill(this.yurt_KayitDataSet.Bolumler);
             }

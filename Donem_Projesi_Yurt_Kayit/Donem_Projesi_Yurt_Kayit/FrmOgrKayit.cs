@@ -17,35 +17,35 @@ namespace Donem_Projesi_Yurt_Kayit
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-SJJ7N21\SQLEXPRESS;Initial Catalog=Yurt_Kayit;Integrated Security=True");
+        SqlBaglantim bgl = new SqlBaglantim();
         
 
         private void OgrKayit_Load(object sender, EventArgs e)
         {
-            baglanti.Open();
+            
 
-            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler",baglanti);
+            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler",bgl.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             while(oku.Read())
             {
                 CmbBolum.Items.Add(oku[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
 
-            baglanti.Open();
-            SqlCommand komut2 = new SqlCommand("Select OdaNo From Odalar  where [Oda Kapasitesi] != OdaAktif", baglanti);
+            
+            SqlCommand komut2 = new SqlCommand("Select OdaNo From Odalar  where [Oda Kapasitesi] != OdaAktif",bgl.baglanti());
             SqlDataReader oku2 = komut2.ExecuteReader();
             while(oku2.Read())
             {
                 CmbOdalar.Items.Add(oku2[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand komutkaydet = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrBolum,OgrDogum,OgrOdaNo,OgrMail,VeliAd,VeliSoyad,VeliTelefon,VeliAdres) values (@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8,@v1,@v2,@v3,@v4)",baglanti);
+            
+            SqlCommand komutkaydet = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrBolum,OgrDogum,OgrOdaNo,OgrMail,VeliAd,VeliSoyad,VeliTelefon,VeliAdres) values (@o1,@o2,@o3,@o4,@o5,@o6,@o7,@o8,@v1,@v2,@v3,@v4)",bgl.baglanti());
             komutkaydet.Parameters.AddWithValue("@o1",TxtOgAd.Text);
             komutkaydet.Parameters.AddWithValue("@o2", txtOgrSoyad.Text);
             komutkaydet.Parameters.AddWithValue("@o3", MskTC.Text);
@@ -61,7 +61,7 @@ namespace Donem_Projesi_Yurt_Kayit
             komutkaydet.Parameters.AddWithValue("@v4", richTextBox1.Text);
 
             komutkaydet.ExecuteNonQuery();
-            baglanti.Close();
+            bgl.baglanti().Close();
             MessageBox.Show("Kayıt işlemi aşarılı olmuştur ");
         }
     }

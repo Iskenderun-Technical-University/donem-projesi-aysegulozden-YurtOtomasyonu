@@ -22,3 +22,15 @@ C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Y
 C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.CoreCompileInputs.cache
 C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.exe
 C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.pdb
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\bin\Debug\Donem_Projesi_Yurt_Kayit.exe.config
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\bin\Debug\Donem_Projesi_Yurt_Kayit.exe
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\bin\Debug\Donem_Projesi_Yurt_Kayit.pdb
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.AssemblyReference.cache
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmBolumler.resources
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.OgrKayit.resources
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.Properties.Resources.resources
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.GenerateResource.cache
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.CoreCompileInputs.cache
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.exe
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.pdb
