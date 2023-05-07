@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurt_KayitDataSet5 = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet5();
-            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ogrenciTableAdapter = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet5TableAdapters.OgrenciTableAdapter();
             this.ogrIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ogrSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,9 +43,12 @@
             this.veliSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veliTelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.veliAdresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ogrenciBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurt_KayitDataSet5 = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet5();
+            this.ogrenciTableAdapter = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet5TableAdapters.OgrenciTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -75,20 +75,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1348, 292);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // yurt_KayitDataSet5
-            // 
-            this.yurt_KayitDataSet5.DataSetName = "Yurt_KayitDataSet5";
-            this.yurt_KayitDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ogrenciBindingSource
-            // 
-            this.ogrenciBindingSource.DataMember = "Ogrenci";
-            this.ogrenciBindingSource.DataSource = this.yurt_KayitDataSet5;
-            // 
-            // ogrenciTableAdapter
-            // 
-            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // ogrIDDataGridViewTextBoxColumn
             // 
@@ -169,6 +156,20 @@
             this.veliAdresDataGridViewTextBoxColumn.HeaderText = "VeliAdres";
             this.veliAdresDataGridViewTextBoxColumn.Name = "veliAdresDataGridViewTextBoxColumn";
             // 
+            // ogrenciBindingSource
+            // 
+            this.ogrenciBindingSource.DataMember = "Ogrenci";
+            this.ogrenciBindingSource.DataSource = this.yurt_KayitDataSet5;
+            // 
+            // yurt_KayitDataSet5
+            // 
+            this.yurt_KayitDataSet5.DataSetName = "Yurt_KayitDataSet5";
+            this.yurt_KayitDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ogrenciTableAdapter
+            // 
+            this.ogrenciTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmOgrListe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,8 +183,8 @@
             this.Text = "FrmOgrListe";
             this.Load += new System.EventHandler(this.FrmOgrListe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ogrenciBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet5)).EndInit();
             this.ResumeLayout(false);
 
         }

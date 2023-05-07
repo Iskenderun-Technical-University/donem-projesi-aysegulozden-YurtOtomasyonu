@@ -34,7 +34,13 @@ C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj
 C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.CoreCompileInputs.cache
 C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.exe
 C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.pdb
-C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.Frmodemler.resources
 C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.Frmodemler.resources
 C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrListe.resources
 C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmAnaMenu.resources
+C:\Users\Ayşegül\Desktop\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrDüzenleme.resources
+C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmAnaMenu.resources
+C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrDüzenleme.resources
+C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrListe.resources
+C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOdeme.resources
+C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmGiderListesi.resources
+C:\Users\Ayşegül\Desktop\Yeni klasör\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmGiderGüncelle.resources
