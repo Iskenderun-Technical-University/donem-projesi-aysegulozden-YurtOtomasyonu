@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Donem_Projesi_Yurt_Kayit",
+    "\\Donem_Projesi_Yurt_Kayit\\Donem_Projesi_Yurt_Kayit"
   ],
-  "SelectedNode": "\\Donem_Projesi_Yurt_Kayit.sln",
+  "SelectedNode": "\\Donem_Projesi_Yurt_Kayit\\Donem_Projesi_Yurt_Kayit\\FrmOgrDüzenleme.cs",
   "PreviewInSolutionExplorer": false
 }

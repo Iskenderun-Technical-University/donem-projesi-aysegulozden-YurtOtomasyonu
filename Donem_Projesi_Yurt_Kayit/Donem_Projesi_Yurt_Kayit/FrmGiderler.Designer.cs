@@ -1,6 +1,6 @@
 ﻿namespace Donem_Projesi_Yurt_Kayit
 {
-    partial class FrmOdeme
+    partial class FrmGiderler
     {
         /// <summary>
         /// Required designer variable.
@@ -138,7 +138,7 @@
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
-            // FrmOdeme
+            // FrmGiderler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -160,8 +160,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FrmOdeme";
-            this.Text = "FrmOdeme";
+            this.Name = "FrmGiderler";
+            this.Text = "Giderler";
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

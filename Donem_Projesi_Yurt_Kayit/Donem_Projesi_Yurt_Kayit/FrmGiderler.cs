@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Donem_Projesi_Yurt_Kayit
 {
-    public partial class FrmOdeme : Form
+    public partial class FrmGiderler : Form
     {
-        public FrmOdeme()
+        public FrmGiderler()
         {
             InitializeComponent();
         }
