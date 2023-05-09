@@ -35,9 +35,9 @@ namespace Donem_Projesi_Yurt_Kayit
             ad = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
             kalan = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
 
-            TxtAd.Text = ad;
+            TxtOgrAd.Text = ad;
             TxtOgrID.Text = id;
-            TxtKalanBorc.Text = kalan;
+            TxtKalan.Text = kalan;
 
         }
 
@@ -45,22 +45,23 @@ namespace Donem_Projesi_Yurt_Kayit
         {
             int odenen, kalan,yeniborc;
             odenen = Convert.ToInt16(TxtOdenen.Text);
-            kalan = Convert.ToInt16(TxtKalanBorc.Text);
+            kalan = Convert.ToInt16(TxtKalan.Text);
 
             yeniborc = kalan - odenen;
-            TxtKalanBorc.Text = yeniborc.ToString();
+            TxtKalan.Text = yeniborc.ToString();
 
             SqlCommand komut = new SqlCommand("update Borclar set  OgrKalanBorc=@b1 where OgrID=@b2", bgl.baglanti());
-            komut.Parameters.AddWithValue("@b1", TxtKalanBorc.Text);
+            komut.Parameters.AddWithValue("@b1", TxtKalan.Text);
             komut.Parameters.AddWithValue("@b2", TxtOgrID.Text);
 
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
+            MessageBox.Show("Borç ödendi");
             this.borclarTableAdapter.Fill(this.yurt_KayitDataSet11.Borclar);
 
             SqlCommand komut2 = new SqlCommand("insert into Kasa (OdemeAy , OdemeMiktar) values (@k1,@k2)", bgl.baglanti());
 
-            komut2.Parameters.AddWithValue("@k1", TxtKalanBorc.Text);
+            komut2.Parameters.AddWithValue("@k1", TxtKalan.Text);
             komut2.Parameters.AddWithValue("@k2", TxtOdenen.Text);
 
             komut2.ExecuteNonQuery();
