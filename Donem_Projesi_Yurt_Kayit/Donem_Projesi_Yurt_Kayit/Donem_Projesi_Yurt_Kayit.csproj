@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonel.Designer.cs">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmYöneticiDüzenle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Yurt_KayitDataSet12.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Yurt_KayitDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Yurt_KayitDataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Yurt_KayitDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -187,6 +198,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Yurt_KayitDataSet9.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmPersonel.resx">
+      <DependentUpon>FrmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmYöneticiDüzenle.resx">
       <DependentUpon>FrmYöneticiDüzenle.cs</DependentUpon>
     </EmbeddedResource>
@@ -295,6 +309,17 @@
     </None>
     <None Include="Yurt_KayitDataSet12.xss">
       <DependentUpon>Yurt_KayitDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet13.xsc">
+      <DependentUpon>Yurt_KayitDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="Yurt_KayitDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Yurt_KayitDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Yurt_KayitDataSet13.xss">
+      <DependentUpon>Yurt_KayitDataSet13.xsd</DependentUpon>
     </None>
     <None Include="Yurt_KayitDataSet2.xsc">
       <DependentUpon>Yurt_KayitDataSet2.xsd</DependentUpon>

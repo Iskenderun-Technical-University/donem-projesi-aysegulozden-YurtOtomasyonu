@@ -66,3 +66,4 @@ C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-ay
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmGelirIstatistik.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmAdminGiriş.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmYöneticiDüzenle.resources
+C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmPersonel.resources

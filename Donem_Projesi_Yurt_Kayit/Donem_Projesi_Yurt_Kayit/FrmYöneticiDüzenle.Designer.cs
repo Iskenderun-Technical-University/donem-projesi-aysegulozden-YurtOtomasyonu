@@ -90,6 +90,7 @@
             this.BtnKaydet.TabIndex = 55;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnSil
             // 
@@ -99,6 +100,7 @@
             this.BtnSil.TabIndex = 56;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGüncelle
             // 
@@ -108,6 +110,7 @@
             this.BtnGüncelle.TabIndex = 57;
             this.BtnGüncelle.Text = "Güncelle";
             this.BtnGüncelle.UseVisualStyleBackColor = true;
+            this.BtnGüncelle.Click += new System.EventHandler(this.BtnGüncelle_Click);
             // 
             // dataGridView1
             // 
@@ -122,6 +125,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(345, 150);
             this.dataGridView1.TabIndex = 58;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // yoneticiIDDataGridViewTextBoxColumn
             // 
