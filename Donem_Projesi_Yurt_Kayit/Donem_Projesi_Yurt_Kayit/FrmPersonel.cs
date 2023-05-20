@@ -40,7 +40,7 @@ namespace Donem_Projesi_Yurt_Kayit
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("delete from Personel where PersonelİD=@p1", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("delete from Personel where PersonelID=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TxtPersonelID.Text);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
