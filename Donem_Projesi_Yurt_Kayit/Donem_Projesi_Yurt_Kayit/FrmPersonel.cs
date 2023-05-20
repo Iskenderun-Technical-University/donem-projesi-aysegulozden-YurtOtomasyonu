@@ -37,5 +37,15 @@ namespace Donem_Projesi_Yurt_Kayit
             MessageBox.Show("Kayıt Eklendi");
             this.personelTableAdapter.Fill(this.yurt_KayitDataSet13.Personel);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("delete from Personel where PersonelİD=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", TxtPersonelID.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Silme işlemi yapıldı");
+            this.personelTableAdapter.Fill(this.yurt_KayitDataSet13.Personel);
+        }
     }
 }

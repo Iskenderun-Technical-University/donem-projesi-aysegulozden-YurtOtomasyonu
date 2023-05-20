@@ -39,18 +39,18 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurt_KayitDataSet13 = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet13();
-            this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.personelTableAdapter = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet13TableAdapters.PersonelTableAdapter();
             this.personelİDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personelAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personelSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personelDepertmanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurt_KayitDataSet13 = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet13();
+            this.personelTableAdapter = new Donem_Projesi_Yurt_Kayit.Yurt_KayitDataSet13TableAdapters.PersonelTableAdapter();
             this.TxtPersonelSoyad = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet13)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtPersonelID
@@ -119,6 +119,7 @@
             this.button2.TabIndex = 42;
             this.button2.Text = "Sil";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -143,20 +144,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 150);
             this.dataGridView1.TabIndex = 44;
-            // 
-            // yurt_KayitDataSet13
-            // 
-            this.yurt_KayitDataSet13.DataSetName = "Yurt_KayitDataSet13";
-            this.yurt_KayitDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // personelBindingSource
-            // 
-            this.personelBindingSource.DataMember = "Personel";
-            this.personelBindingSource.DataSource = this.yurt_KayitDataSet13;
-            // 
-            // personelTableAdapter
-            // 
-            this.personelTableAdapter.ClearBeforeFill = true;
             // 
             // personelİDDataGridViewTextBoxColumn
             // 
@@ -183,6 +170,20 @@
             this.personelDepertmanDataGridViewTextBoxColumn.DataPropertyName = "PersonelDepertman";
             this.personelDepertmanDataGridViewTextBoxColumn.HeaderText = "PersonelDepertman";
             this.personelDepertmanDataGridViewTextBoxColumn.Name = "personelDepertmanDataGridViewTextBoxColumn";
+            // 
+            // personelBindingSource
+            // 
+            this.personelBindingSource.DataMember = "Personel";
+            this.personelBindingSource.DataSource = this.yurt_KayitDataSet13;
+            // 
+            // yurt_KayitDataSet13
+            // 
+            this.yurt_KayitDataSet13.DataSetName = "Yurt_KayitDataSet13";
+            this.yurt_KayitDataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // personelTableAdapter
+            // 
+            this.personelTableAdapter.ClearBeforeFill = true;
             // 
             // TxtPersonelSoyad
             // 
@@ -224,8 +225,8 @@
             this.Text = "FrmPersonel";
             this.Load += new System.EventHandler(this.FrmPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurt_KayitDataSet13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
