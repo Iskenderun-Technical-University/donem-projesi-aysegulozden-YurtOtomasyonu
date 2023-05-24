@@ -47,5 +47,19 @@ namespace Donem_Projesi_Yurt_Kayit
             MessageBox.Show("Silme işlemi yapıldı");
             this.personelTableAdapter.Fill(this.yurt_KayitDataSet13.Personel);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutgun = new SqlCommand("update Personel set PersonelAd=@p1,PersonelSoyad=@p2,PersonelDepertman=@p3 where PersonelID=@p4 ", bgl.baglanti());
+            komutgun.Parameters.AddWithValue("@p1", TxtPersonelAd.Text);
+            komutgun.Parameters.AddWithValue("@p2", TxtPersonelSoyad.Text);
+            komutgun.Parameters.AddWithValue("@p3", TxtPersonelGorev.Text);
+            komutgun.Parameters.AddWithValue("@p4", TxtPersonelID.Text);
+            komutgun.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Kayıt güncellendi");
+            this.personelTableAdapter.Fill(this.yurt_KayitDataSet13.Personel);
+
+        }
     }
 }
