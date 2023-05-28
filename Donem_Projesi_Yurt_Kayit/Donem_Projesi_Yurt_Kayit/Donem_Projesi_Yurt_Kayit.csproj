@@ -113,11 +113,11 @@
     <Compile Include="FrmOgrDüzenleme.Designer.cs">
       <DependentUpon>FrmOgrDüzenleme.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOgrKayit.cs">
+    <Compile Include="FrmOgrenciKayit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOgrKayit.Designer.cs">
-      <DependentUpon>FrmOgrKayit.cs</DependentUpon>
+    <Compile Include="FrmOgrenciKayit.Designer.cs">
+      <DependentUpon>FrmOgrenciKayit.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmOgrListe.cs">
       <SubType>Form</SubType>
@@ -231,8 +231,8 @@
     <EmbeddedResource Include="FrmOgrDüzenleme.resx">
       <DependentUpon>FrmOgrDüzenleme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOgrKayit.resx">
-      <DependentUpon>FrmOgrKayit.cs</DependentUpon>
+    <EmbeddedResource Include="FrmOgrenciKayit.resx">
+      <DependentUpon>FrmOgrenciKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOgrListe.resx">
       <DependentUpon>FrmOgrListe.cs</DependentUpon>

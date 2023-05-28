@@ -23,5 +23,72 @@ namespace Donem_Projesi_Yurt_Kayit
             this.ogrenciTableAdapter.Fill(this.yurt_KayitDataSet9.Ogrenci);
 
         }
+
+        private void öğrenciEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrenciKayit fr = new FrmOgrenciKayit();
+            fr.Show();
+        }
+
+        private void öğrenciListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrListe fr = new FrmOgrListe();
+            fr.Show();
+        }
+
+        private void öğrenciDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOgrDüzenleme fr = new FrmOgrDüzenleme();
+            fr.Show();
+        }
+
+        private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler fr = new FrmBolumler();
+            fr.Show();
+        }
+
+        private void bölümDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBolumler fr = new FrmBolumler();
+            fr.Show();
+        }
+
+        private void giderListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOdemeler fr = new FrmOdemeler();
+            fr.Show();
+        }
+
+        private void giderEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGiderler fr = new FrmGiderler();
+            fr.Show();
+        }
+
+        private void giderListesiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmGiderListesi fr = new FrmGiderListesi();
+            fr.Show();
+        }
+
+        private void gelirlerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmGelirIstatistik fr = new FrmGelirIstatistik();
+            fr.Show();
+        }
+
+        private void şifreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmYöneticiDüzenle fr = new FrmYöneticiDüzenle();
+            fr.Show();
+        }
+
+        private void personelDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPersonel fr = new FrmPersonel();
+            fr.Show();
+
+        }
     }
 }

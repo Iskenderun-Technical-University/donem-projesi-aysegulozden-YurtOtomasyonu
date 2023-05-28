@@ -56,7 +56,6 @@ C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-ay
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmGiderler.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOdemeler.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrDüzenleme.resources
-C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.OgrKayit.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrListe.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.Properties.Resources.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.csproj.GenerateResource.cache
@@ -67,3 +66,4 @@ C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-ay
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmAdminGiriş.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmYöneticiDüzenle.resources
 C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmPersonel.resources
+C:\Users\Ayşegül\Source\Repos\Iskenderun-Technical-University\donem-projesi-aysegulozden-YurtOtomasyonu\Donem_Projesi_Yurt_Kayit\Donem_Projesi_Yurt_Kayit\obj\Debug\Donem_Projesi_Yurt_Kayit.FrmOgrenciKayit.resources
