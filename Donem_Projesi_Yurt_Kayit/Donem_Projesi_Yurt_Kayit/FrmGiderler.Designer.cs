@@ -69,7 +69,7 @@
             this.TxtDogalgaz.Location = new System.Drawing.Point(138, 66);
             this.TxtDogalgaz.Name = "TxtDogalgaz";
             this.TxtDogalgaz.Size = new System.Drawing.Size(209, 22);
-            this.TxtDogalgaz.TabIndex = 3;
+            this.TxtDogalgaz.TabIndex = 2;
             // 
             // label2
             // 
@@ -85,7 +85,7 @@
             this.TxtInternet.Location = new System.Drawing.Point(138, 107);
             this.TxtInternet.Name = "TxtInternet";
             this.TxtInternet.Size = new System.Drawing.Size(209, 22);
-            this.TxtInternet.TabIndex = 5;
+            this.TxtInternet.TabIndex = 3;
             // 
             // label3
             // 
@@ -101,7 +101,7 @@
             this.TxtDiger.Location = new System.Drawing.Point(138, 191);
             this.TxtDiger.Name = "TxtDiger";
             this.TxtDiger.Size = new System.Drawing.Size(209, 22);
-            this.TxtDiger.TabIndex = 7;
+            this.TxtDiger.TabIndex = 5;
             // 
             // label4
             // 
@@ -114,10 +114,10 @@
             // 
             // TxtGıda
             // 
-            this.TxtGıda.Location = new System.Drawing.Point(138, 150);
+            this.TxtGıda.Location = new System.Drawing.Point(142, 150);
             this.TxtGıda.Name = "TxtGıda";
             this.TxtGıda.Size = new System.Drawing.Size(209, 22);
-            this.TxtGıda.TabIndex = 11;
+            this.TxtGıda.TabIndex = 4;
             // 
             // label6
             // 
@@ -133,7 +133,7 @@
             this.BtnKaydet.Location = new System.Drawing.Point(168, 232);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(120, 30);
-            this.BtnKaydet.TabIndex = 12;
+            this.BtnKaydet.TabIndex = 6;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);

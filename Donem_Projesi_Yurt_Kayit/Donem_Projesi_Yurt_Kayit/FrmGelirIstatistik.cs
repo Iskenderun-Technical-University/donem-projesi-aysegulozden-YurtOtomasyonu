@@ -36,6 +36,15 @@ namespace Donem_Projesi_Yurt_Kayit
                 CmbAylar.Items.Add(oku2[0].ToString());
             }
             bgl.baglanti().Close();
+
+            SqlCommand komutkazanc = new SqlCommand("select  OdemeAy, sum(odememiktar) from kasa group by OdemeAy", bgl.baglanti());
+            SqlDataReader oku3 = komutkazanc.ExecuteReader();
+            while(oku3.Read())
+            {
+                this.chart1.Series["Aylık"].Points.AddXY(oku3[0], oku3[1]);
+            }
+            bgl.baglanti().Close();
+
         }
 
         private void CmbAylar_SelectedIndexChanged(object sender, EventArgs e)

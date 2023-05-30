@@ -18,6 +18,23 @@ namespace Donem_Projesi_Yurt_Kayit
             InitializeComponent();
         }
         public string id,ad,soyad,TC,telefon,dogum,bolum;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutsil = new SqlCommand("delete from Ogrenci where OgrID=@s1", bgl.baglanti());
+            komutsil.Parameters.AddWithValue("@s1", TxtOgrId.Text);
+            komutsil.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Silme Başarı ile Gerçekleşti");
+
+            SqlCommand komutoda = new SqlCommand("update Odalar set OdaAktif=OdaAktif-1 where OdaNo=@o1", bgl.baglanti());
+            komutoda.Parameters.AddWithValue("@o1", CmbOdalar.Text);
+            komutoda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            
+
+        }
+
         public string mail, odano, veliad, velisoyad, velitel, veliadres;
 
         SqlBaglantim bgl = new SqlBaglantim();
@@ -26,7 +43,8 @@ namespace Donem_Projesi_Yurt_Kayit
         {
             try
             {
-                SqlCommand komut = new SqlCommand("update Ogrenci set (OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrBolum,OgrDogum,OgrOdaNo,OgrMail,VeliAd,VeliSoyad,VeliTelefon,VeliAdres) values(@o2,@o3,@o,@o5,@o6,@7,@o8,@o9,@v1,@v2,@v3,@4)", bgl.baglanti());
+                SqlCommand komut = new SqlCommand("update Ogrenci set (OgrID,OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrBolum,OgrDogum,OgrOdaNo,OgrMail,VeliAd,VeliSoyad,VeliTelefon,VeliAdres) values(,@o1,@o2,@o3,@o,@o5,@o6,@7,@o8,@o9,@v1,@v2,@v3,@4)", bgl.baglanti());
+                komut.Parameters.AddWithValue("@o1", TxtOgrId);
                 komut.Parameters.AddWithValue("@o2", TxtOgAd.Text);
                 komut.Parameters.AddWithValue("@o3", txtOgrSoyad.Text);
                 komut.Parameters.AddWithValue("@o4", MskTC.Text);
@@ -55,7 +73,7 @@ namespace Donem_Projesi_Yurt_Kayit
 
         private void FrmOgrDüzenleme_Load(object sender, EventArgs e)
         {
-            label1.Text = id;
+            TxtOgrId.Text = id;
             TxtOgAd.Text = ad;
             txtOgrSoyad.Text = soyad;
             MskTC.Text = TC;
@@ -68,9 +86,9 @@ namespace Donem_Projesi_Yurt_Kayit
             TxtVeliSoyad.Text = velisoyad;
             MskVeliTelefon.Text = velitel;
             richTextBox1.Text = veliadres;
+           
 
 
-               
 
         }
     }

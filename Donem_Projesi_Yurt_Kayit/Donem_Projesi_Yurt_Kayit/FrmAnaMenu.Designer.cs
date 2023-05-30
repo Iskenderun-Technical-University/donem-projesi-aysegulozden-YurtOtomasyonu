@@ -164,22 +164,22 @@
             // öğrenciEkleToolStripMenuItem
             // 
             this.öğrenciEkleToolStripMenuItem.Name = "öğrenciEkleToolStripMenuItem";
-            this.öğrenciEkleToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.öğrenciEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.öğrenciEkleToolStripMenuItem.Text = "Öğrenci Ekle";
             this.öğrenciEkleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciEkleToolStripMenuItem_Click);
             // 
             // öğrenciListesiToolStripMenuItem
             // 
             this.öğrenciListesiToolStripMenuItem.Name = "öğrenciListesiToolStripMenuItem";
-            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.öğrenciListesiToolStripMenuItem.Text = "Öğrenci Listesi";
             this.öğrenciListesiToolStripMenuItem.Click += new System.EventHandler(this.öğrenciListesiToolStripMenuItem_Click);
             // 
             // öğrenciDüzenleToolStripMenuItem
             // 
             this.öğrenciDüzenleToolStripMenuItem.Name = "öğrenciDüzenleToolStripMenuItem";
-            this.öğrenciDüzenleToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.öğrenciDüzenleToolStripMenuItem.Text = "Öğrenci Düzenle";
+            this.öğrenciDüzenleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öğrenciDüzenleToolStripMenuItem.Text = "Öğrenci Sil";
             this.öğrenciDüzenleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciDüzenleToolStripMenuItem_Click);
             // 
             // bölümlerToolStripMenuItem
@@ -214,7 +214,7 @@
             // giderListesiToolStripMenuItem
             // 
             this.giderListesiToolStripMenuItem.Name = "giderListesiToolStripMenuItem";
-            this.giderListesiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.giderListesiToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.giderListesiToolStripMenuItem.Text = "Ödeme Al";
             this.giderListesiToolStripMenuItem.Click += new System.EventHandler(this.giderListesiToolStripMenuItem_Click);
             // 
@@ -230,7 +230,7 @@
             // gelirlerToolStripMenuItem
             // 
             this.gelirlerToolStripMenuItem.Name = "gelirlerToolStripMenuItem";
-            this.gelirlerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gelirlerToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.gelirlerToolStripMenuItem.Text = "Gelirler";
             this.gelirlerToolStripMenuItem.Click += new System.EventHandler(this.gelirlerToolStripMenuItem_Click);
             // 
@@ -252,14 +252,14 @@
             // şifreToolStripMenuItem
             // 
             this.şifreToolStripMenuItem.Name = "şifreToolStripMenuItem";
-            this.şifreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.şifreToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.şifreToolStripMenuItem.Text = "Şifre";
             this.şifreToolStripMenuItem.Click += new System.EventHandler(this.şifreToolStripMenuItem_Click);
             // 
             // personelDüzenleToolStripMenuItem
             // 
             this.personelDüzenleToolStripMenuItem.Name = "personelDüzenleToolStripMenuItem";
-            this.personelDüzenleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelDüzenleToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.personelDüzenleToolStripMenuItem.Text = "Personel Düzenle";
             this.personelDüzenleToolStripMenuItem.Click += new System.EventHandler(this.personelDüzenleToolStripMenuItem_Click);
             // 
@@ -296,14 +296,14 @@
             // giderEkleToolStripMenuItem
             // 
             this.giderEkleToolStripMenuItem.Name = "giderEkleToolStripMenuItem";
-            this.giderEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.giderEkleToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.giderEkleToolStripMenuItem.Text = "Gider Ekle";
             this.giderEkleToolStripMenuItem.Click += new System.EventHandler(this.giderEkleToolStripMenuItem_Click);
             // 
             // giderListesiToolStripMenuItem1
             // 
             this.giderListesiToolStripMenuItem1.Name = "giderListesiToolStripMenuItem1";
-            this.giderListesiToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.giderListesiToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.giderListesiToolStripMenuItem1.Text = "Gider Listesi";
             this.giderListesiToolStripMenuItem1.Click += new System.EventHandler(this.giderListesiToolStripMenuItem1_Click);
             // 

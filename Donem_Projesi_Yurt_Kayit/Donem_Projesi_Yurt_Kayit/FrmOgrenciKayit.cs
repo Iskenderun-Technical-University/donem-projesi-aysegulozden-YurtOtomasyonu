@@ -86,7 +86,7 @@ namespace Donem_Projesi_Yurt_Kayit
             }
             catch (Exception)
             {
-                MessageBox.Show("Hata Lütfen yeniden deneyi ");
+                MessageBox.Show("Hata Lütfen yeniden deneyin ");
 
             }
 

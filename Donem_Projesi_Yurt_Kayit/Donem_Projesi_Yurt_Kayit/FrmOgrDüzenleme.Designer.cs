@@ -55,6 +55,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.TxtOgrId = new System.Windows.Forms.TextBox();
             this.BtnKaydet = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -290,7 +291,7 @@
             // BtnKaydet
             // 
             this.BtnKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.BtnKaydet.Location = new System.Drawing.Point(217, 652);
+            this.BtnKaydet.Location = new System.Drawing.Point(69, 652);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(146, 36);
             this.BtnKaydet.TabIndex = 69;
@@ -298,12 +299,24 @@
             this.BtnKaydet.UseVisualStyleBackColor = false;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button1.Location = new System.Drawing.Point(268, 652);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 36);
+            this.button1.TabIndex = 70;
+            this.button1.Text = "Sil";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmOgrDüzenleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(493, 700);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnKaydet);
             this.Controls.Add(this.TxtOgrId);
             this.Controls.Add(this.richTextBox1);
@@ -370,5 +383,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox TxtOgrId;
         private System.Windows.Forms.Button BtnKaydet;
+        private System.Windows.Forms.Button button1;
     }
 }

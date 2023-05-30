@@ -38,7 +38,7 @@ namespace Donem_Projesi_Yurt_Kayit
 
         private void öğrenciDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmOgrDüzenleme fr = new FrmOgrDüzenleme();
+            FrmOgrListe fr = new FrmOgrListe();
             fr.Show();
         }
 
