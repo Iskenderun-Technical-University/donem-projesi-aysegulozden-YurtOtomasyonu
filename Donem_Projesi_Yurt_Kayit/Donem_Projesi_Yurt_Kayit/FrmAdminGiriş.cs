@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Donem_Projesi_Yurt_Kayit
 {
@@ -16,18 +17,29 @@ namespace Donem_Projesi_Yurt_Kayit
         {
             InitializeComponent();
         }
+        SqlBaglantim bgl = new SqlBaglantim();
 
         private void BtnGiris_Click(object sender, EventArgs e)
         {
-            if(TxtKullanıcıAdı.Text=="admin33" && TxtSifre.Text=="123456")
+            SqlCommand komut = new SqlCommand("select * from admin where YoneticiAd=@y1 and YoneticiSifre=@y2", bgl.baglanti());
+            komut.Parameters.AddWithValue("@y1", TxtKullanıcıAdı.Text);
+            komut.Parameters.AddWithValue("@y2", TxtSifre.Text);
+            SqlDataReader oku = komut.ExecuteReader();
+            if(oku.Read())
             {
                 FrmAnaMenu fr = new FrmAnaMenu();
                 fr.Show();
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Hatalı Giriş Yaptınız");
+                MessageBox.Show("HATALI KULLANICI ADI VEYA ŞİFRE");
+                TxtKullanıcıAdı.Clear();
+                TxtSifre.Clear();
+                TxtKullanıcıAdı.Focus();
+
             }
+            bgl.baglanti().Close();
         }
     }
 }

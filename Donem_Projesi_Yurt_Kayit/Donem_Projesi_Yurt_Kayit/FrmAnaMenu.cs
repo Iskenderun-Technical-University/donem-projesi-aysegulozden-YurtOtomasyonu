@@ -90,5 +90,21 @@ namespace Donem_Projesi_Yurt_Kayit
             fr.Show();
 
         }
+
+        private void notEkleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNotEkle fr = new FrmNotEkle();
+            fr.Show();
+        }
+
+        private void hakkımızdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu program Ayşegül Özden tarafından Veri Tabanı Desteki Görsel Programlama Projesi Olarak yapılmıştır", "Yurt Kayıt Otomasyonu",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

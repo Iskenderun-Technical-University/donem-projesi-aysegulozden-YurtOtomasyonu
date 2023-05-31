@@ -55,6 +55,7 @@
             this.yöneticiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.şifreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelDüzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notEkleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.erişimKolaylığıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -164,21 +165,21 @@
             // öğrenciEkleToolStripMenuItem
             // 
             this.öğrenciEkleToolStripMenuItem.Name = "öğrenciEkleToolStripMenuItem";
-            this.öğrenciEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öğrenciEkleToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.öğrenciEkleToolStripMenuItem.Text = "Öğrenci Ekle";
             this.öğrenciEkleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciEkleToolStripMenuItem_Click);
             // 
             // öğrenciListesiToolStripMenuItem
             // 
             this.öğrenciListesiToolStripMenuItem.Name = "öğrenciListesiToolStripMenuItem";
-            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öğrenciListesiToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.öğrenciListesiToolStripMenuItem.Text = "Öğrenci Listesi";
             this.öğrenciListesiToolStripMenuItem.Click += new System.EventHandler(this.öğrenciListesiToolStripMenuItem_Click);
             // 
             // öğrenciDüzenleToolStripMenuItem
             // 
             this.öğrenciDüzenleToolStripMenuItem.Name = "öğrenciDüzenleToolStripMenuItem";
-            this.öğrenciDüzenleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öğrenciDüzenleToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.öğrenciDüzenleToolStripMenuItem.Text = "Öğrenci Sil";
             this.öğrenciDüzenleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciDüzenleToolStripMenuItem_Click);
             // 
@@ -244,7 +245,8 @@
             // 
             this.yöneticiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.şifreToolStripMenuItem,
-            this.personelDüzenleToolStripMenuItem});
+            this.personelDüzenleToolStripMenuItem,
+            this.notEkleToolStripMenuItem});
             this.yöneticiToolStripMenuItem.Name = "yöneticiToolStripMenuItem";
             this.yöneticiToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.yöneticiToolStripMenuItem.Text = "Yönetici";
@@ -263,6 +265,13 @@
             this.personelDüzenleToolStripMenuItem.Text = "Personel Düzenle";
             this.personelDüzenleToolStripMenuItem.Click += new System.EventHandler(this.personelDüzenleToolStripMenuItem_Click);
             // 
+            // notEkleToolStripMenuItem
+            // 
+            this.notEkleToolStripMenuItem.Name = "notEkleToolStripMenuItem";
+            this.notEkleToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.notEkleToolStripMenuItem.Text = "Not Ekle";
+            this.notEkleToolStripMenuItem.Click += new System.EventHandler(this.notEkleToolStripMenuItem_Click);
+            // 
             // erişimKolaylığıToolStripMenuItem
             // 
             this.erişimKolaylığıToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -275,14 +284,16 @@
             // hakkımızdaToolStripMenuItem
             // 
             this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
-            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.hakkımızdaToolStripMenuItem.Text = "Hakkımızda";
+            this.hakkımızdaToolStripMenuItem.Click += new System.EventHandler(this.hakkımızdaToolStripMenuItem_Click);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // giderlerToolStripMenuItem
             // 
@@ -296,14 +307,14 @@
             // giderEkleToolStripMenuItem
             // 
             this.giderEkleToolStripMenuItem.Name = "giderEkleToolStripMenuItem";
-            this.giderEkleToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.giderEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.giderEkleToolStripMenuItem.Text = "Gider Ekle";
             this.giderEkleToolStripMenuItem.Click += new System.EventHandler(this.giderEkleToolStripMenuItem_Click);
             // 
             // giderListesiToolStripMenuItem1
             // 
             this.giderListesiToolStripMenuItem1.Name = "giderListesiToolStripMenuItem1";
-            this.giderListesiToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
+            this.giderListesiToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.giderListesiToolStripMenuItem1.Text = "Gider Listesi";
             this.giderListesiToolStripMenuItem1.Click += new System.EventHandler(this.giderListesiToolStripMenuItem1_Click);
             // 
@@ -365,5 +376,6 @@
         private System.Windows.Forms.ToolStripMenuItem giderlerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giderEkleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giderListesiToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem notEkleToolStripMenuItem;
     }
 }
