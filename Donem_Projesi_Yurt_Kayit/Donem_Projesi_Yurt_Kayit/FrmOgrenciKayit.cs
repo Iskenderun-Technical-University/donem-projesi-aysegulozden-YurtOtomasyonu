@@ -64,7 +64,7 @@ namespace Donem_Projesi_Yurt_Kayit
 
                 komutkaydet.ExecuteNonQuery();
                 bgl.baglanti().Close();
-                MessageBox.Show("Kayıt işlemi aşarılı olmuştur ");
+                MessageBox.Show("Kayıt işlemi başarılı olmuştur ");
 
                 SqlCommand komut = new SqlCommand("select OgrID from Ogrenci", bgl.baglanti());
                 SqlDataReader oku = komut.ExecuteReader();
@@ -75,7 +75,7 @@ namespace Donem_Projesi_Yurt_Kayit
                 bgl.baglanti().Close();
 
 
-                SqlCommand komutkaydet2 = new SqlCommand("insert into Borclar  (OgrID,OgrAd,OgrSoyad)values(@b1,@b2,@b3)", bgl.baglanti());
+                SqlCommand komutkaydet2 = new SqlCommand("insert into Borclar  (OgrID,OgrAd,OgrSoyad) values(@b1,@b2,@b3)", bgl.baglanti());
                 komutkaydet2.Parameters.AddWithValue("@b1", label13.Text);
                 komutkaydet2.Parameters.AddWithValue("@b2", TxtOgAd.Text);
                 komutkaydet2.Parameters.AddWithValue("@b3", txtOgrSoyad.Text);

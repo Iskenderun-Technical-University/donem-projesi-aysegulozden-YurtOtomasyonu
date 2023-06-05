@@ -69,6 +69,7 @@
             this.BtnKaydet.TabIndex = 5;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = false;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // groupBox2
             // 
@@ -326,7 +327,7 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Adı:";
             // 
-            // OgrKayit
+            // FrmOgrenciKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -338,7 +339,7 @@
             this.Font = new System.Drawing.Font("Lucida Fax", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Margin = new System.Windows.Forms.Padding(5, 3, 5, 3);
-            this.Name = "OgrKayit";
+            this.Name = "FrmOgrenciKayit";
             this.Text = "Öğrenci Kayit";
             this.Load += new System.EventHandler(this.OgrKayit_Load);
             this.groupBox2.ResumeLayout(false);
